@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --orange: #fcae61;
+  --blue: #2601f9;
+  --grey: #616368;
+  --dark-grey: #242f50;
+  --light-grey: #e2eaed;
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(https://fonts.google.com/specimen/Poppins?query=poppin&sidebar.open=true&selection.family=Poppins:wght@400;500;600;700);
+}
+a {
+  text-decoration: none;
+  color: var(--grey);
+}
+body {
+  font-family: "Poppins";
+  color: var(--grey);
+  background: url("./images/Vector Smart Object.png");
+  background-size: 1200px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 100;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 31px;
+  font-weight: 800;
+  color: var(--orange);
+  margin-right: auto;
+}
+.logo span {
+  color: var(--dark-grey);
+}
+.header__nav {
+  display: flex;
+  list-style: none;
+}
+.header__item {
+  margin-right: 30px;
+}
+.btn {
+  background-color: var(--blue);
+  border-radius: 50px;
+  padding: 16px 40px;
+  color: #fff;
+}
+/* Главная страница сайта */
+.main {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: url("./images/city.png");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+.container {
+}
+.main__wrapper {
+  display: flex;
+  /* width: 70%; */
+  padding: 0 70px;
+  margin: auto;
+  background: url(./images/Layer\ 3.png);
+}
+.main__content {
+  margin: auto 0;
+}
+.main__content span {
+  display: flex;
+  background: var(--light-grey);
+  width: fit-content;
+  height: 35px;
+  position: relative;
+  padding: 0 50px;
+  border-radius: 20px;
+  align-items: center;
+  font-size: 18px;
+  color: var(--dark-grey);
+  margin-bottom: 10px;
+}
+.main__content span svg {
+  height: 100%;
+  width: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  background: var(--orange);
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+}
+.main__content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--dark-grey);
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+.main__content p {
+  margin-bottom: 50px;
+}
+.main__links {
+  /* margin: 30px 0; */
+}
+.btn {
+}
+.video__link {
+  color: var(--blue);
+  margin-left: 25px;
+}
+.main__image {
+  margin-left: 100px;
+  height: 85vh;
+}
